@@ -1,7 +1,3 @@
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
-
 .navbar {
   margin-bottom: 0;
 }
@@ -20,18 +16,26 @@ body {
 .jumbotron-heading {
   font-weight: 300;
 }
-
+.header-cover{
+	height:100vh;
+	background:#424242;
+}
 .jumbotron .container {
   max-width: 40rem;
 }
 
 .album {
-  min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #f7f7f7;
 }
-
+.about{
+	padding-top:3rem;
+	padding-bottom:3rem;
+}
+.about span{
+	font-weight:bold;
+}
 .card {
   float: left;
   width: 33.333%;
@@ -43,7 +47,30 @@ body {
 .card > img {
   margin-bottom: .75rem;
 }
-
+.section-title{
+	text-align:center;
+	color:#212121;
+}
+.title-column{
+	margin-bottom:2rem;
+}
+.section-title::after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 28px;
+	width: 3rem;
+	height: 2px;
+	background-color: #03a1e4;
+}
+.card-title{
+	text-align:center;
+	color:#424242;
+	margin:1rem auto;
+}
 .card-text {
   font-size: 85%;
 }
@@ -67,13 +94,13 @@ body {
 } */
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 8rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 36rem;
   background-color: #777;
 }
 .carousel-item > img {
@@ -140,6 +167,14 @@ body {
   }
 }
 /* Sitio */
+.list-item .material-icons{
+	color:#03a1e4;
+}
+.list-item span{
+	color:#fff;
+	position:absolute;
+	margin-left:1rem;
+}
 .features{
 	text-align:center;
 }
@@ -149,12 +184,23 @@ body {
 	margin-rigth:2rem;
 	margin-left:1rem;
 }
+.logo-footer{
+	width:12rem;
+}
 /* Footer */
 footer {
+	background:#424242;
+	color:#fff!important;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
+footer h4{
+	color:#fff;
+}
 footer p {
   margin-bottom: .25rem;
+}
+
+footer label{
+	display:none;
 }
