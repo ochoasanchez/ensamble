@@ -8,7 +8,7 @@
 	font-weight:bold;
 	src: url(mmrtextb.ttf);
 }
-p,label{
+p,label,h2,h3{
 	font-family:'Myanmar';
 	font-weight:300;
 }
@@ -121,17 +121,16 @@ body {
 } */
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 8rem;
+  bottom: 6rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 36rem;
+  height: 35rem;
   background-color: #777;
 }
 .carousel-item > img {
-	width:100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -175,7 +174,7 @@ body {
 	background-size:cover;
 }
 .contact>.container>.row{
-	height:20rem;
+	height:24rem;
 }
 .contact>.container>.row>.col>p{
 	text-align:center;
@@ -196,7 +195,8 @@ body {
 	margin-top:.5rem;
 }
 #pintura>.card-title{
-	margin:0!important;
+	margin-top:0.5rem!important;
+	margin-bottom:-0.5rem!important;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -263,3 +263,24 @@ footer p {
 footer label{
 	display:none;
 }*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.carousel-caption{
+		bottom:10rem;
+	}
+	.carousel-item{
+		height:38rem;
+	}
+	.carousel-item > img {
+		width:100%;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
