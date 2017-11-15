@@ -1,3 +1,22 @@
+@font-face {
+	font-family: Myanmar;
+	font-weight:300;
+	src: url(mmrtext.ttf);
+}
+@font-face {
+	font-family: Myanmar;
+	font-weight:bold;
+	src: url(mmrtextb.ttf);
+}
+p,label{
+	font-family:'Myanmar';
+	font-weight:300;
+}
+.section-title{
+	font-family:'Myanmar';
+	font-weight:bold;
+	text-transform:uppercase;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -30,7 +49,7 @@
   background-color: #f7f7f7;
 }
 .about{
-	padding-top:3rem;
+	padding-top:5rem;
 	padding-bottom:3rem;
 }
 .about span{
@@ -57,14 +76,17 @@
 .section-title::after{
 	content: '';
 	position: absolute;
-	top: 100%;
+	top: 2.5rem;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	width: 28px;
-	width: 3rem;
+	width: 9rem;
 	height: 2px;
-	background-color: #03a1e4;
+	background-color: #019ee1;
+}
+.blue,.card-title{
+	color:#019ee1!important;
 }
 .card-title{
 	text-align:center;
@@ -72,7 +94,12 @@
 	margin:1rem auto;
 }
 .card-text {
+	margin-top:1.5rem;
   font-size: 85%;
+	text-align:justify;
+}
+.white{
+	color:#fff!important;
 }
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -143,8 +170,34 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
-
+.contact{
+	background:url('../img/bg_blue.jpg') center center no-repeat;
+	background-size:cover;
+}
+.contact>.container>.row{
+	height:20rem;
+}
+.contact>.container>.row>.col>p{
+	text-align:center;
+	margin-top:2rem;
+}
+.message{
+	color:#fff;
+	text-align:center;
+}
+#framing>.card-title{
+	margin-top:.5rem!important;
+	margin-bottom:0!important;
+}
+#framing>.card-text{
+	margin-top:.5rem;
+}
+#pintura>.card-text{
+	margin-top:.5rem;
+}
+#pintura>.card-title{
+	margin:0!important;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -179,7 +232,7 @@ body {
 	text-align:center;
 }
 .brand-img{
-	width:4rem;
+	width:180px;
 	height:auto;
 	margin-rigth:2rem;
 	margin-left:1rem;
@@ -189,7 +242,7 @@ body {
 }
 /* Footer */
 footer {
-	background:#424242;
+	background:#212121;
 	color:#fff!important;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -200,7 +253,13 @@ footer h4{
 footer p {
   margin-bottom: .25rem;
 }
-
+#contact-form>.form-group{
+	margin-bottom:.25rem!important;
+}
+#contact-form>.form-group>label{
+	color:#E5E5E5;
+}
+/*
 footer label{
 	display:none;
-}
+}*/
