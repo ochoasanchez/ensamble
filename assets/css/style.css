@@ -259,6 +259,9 @@ footer p {
 #contact-form>.form-group>label{
 	color:#E5E5E5;
 }
+.hidden{
+	visibility:hidden!important;
+}
 /*
 footer label{
 	display:none;
@@ -280,7 +283,19 @@ footer label{
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	.navbar-collapse{
+		position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	}
+	.nav-item{
+		padding-top: 2rem;
+	}
+	.brand{
+		padding-top:0;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
