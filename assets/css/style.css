@@ -298,6 +298,12 @@ footer label{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.navbar{
+		height:15vh;
+	}
+	.carousel-item{
+		height:85vh;
+	}
 	.carousel-caption{
 		bottom:12rem;
 	}
@@ -311,6 +317,21 @@ footer label{
 	}
 	.brand{
 		padding-top:0;
+	}
+}
+@media (min-width: 1900px) {
+	.carousel-caption>h1{
+		font-size:5rem!important;
+	}
+	.section-title{
+		font-size:3rem;
+	}
+	.section-title:after{
+		margin-top:1.5rem;
+
+	}
+	.carousel-caption{
+		bottom:18rem;
 	}
 }
 
