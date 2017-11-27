@@ -50,7 +50,7 @@
 			.banner{
 				background:url('assets/img/about.jpg') center center no-repeat;
 				background-size:cover;
-				min-height:32rem;
+				min-height:24rem;
 			}
 			.actions{
 				padding-top:-1rem;
@@ -60,16 +60,16 @@
 				width:100%;
 				text-align:center;
 			}
+			.icon{
+				text-align:center;
+			}
+			.icon>img{
+				width:25%;
+				margin:1rem auto 2rem;
+			}
 			footer{
 				background:url('assets/img/contact.png') center center no-repeat;
 				background-size:cover;
-			}
-			.circle{
-				margin:1rem auto;
-				width:10rem;
-				height:10rem;
-				background:#95c221;
-				border-radius:50%;
 			}
 			.col-title{
 				color:#019ee1;
@@ -99,20 +99,17 @@
 						<li class="nav-item brand">
 							<a class="navbar-brand" href="index.html"><img class="brand-img" src="assets/img/logo_wide.png"></a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">Nosotros</a>
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="about.html">Quiénes Somos <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="services.html">Servicios</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Proyectos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
+							<a class="nav-link" href="#contacto">Contacto</a>
 						</li>
 					</ul>
 				</div>
@@ -145,17 +142,17 @@
 							<p class="text-justify">Somos una empresa legalmente constituida bajo las leyes de la república de Panamá, capacitada para la elaboración de todo tipo de construcción en sistemas livianos tanto interior como exterior, fachadas ventiladas y en general todo  lo relacionado con estructuras livianas, respetando las especificaciones técnicas propias de estos sistemas constructivos.</p>
 						</div>
 						<div class="col-12 col-sm-4">
-							<div class="circle"></div>
+							<div class="icon"><img src="assets/img/icon/objetivos.svg"></div>
 							<h3 class="col-title">Misión</h3>
 							<p class="col-desc">Ejecutar obras, incorporando nuevas prácticas que contribuyan con el mejoramiento de  la calidad de vida de las personas, asegurando la satisfacción de clientes, socios y proveedores, y promoviendo el desarrollo profesional y personal de nuestros colaboradores.</p>
 						</div>
 						<div class="col-12 col-sm-4">
-							<div class="circle"></div>
+							<div class="icon"><img src="assets/img/icon/obras.svg"></div>
 							<h3 class="col-title">Visión</h3>
 							<p class="col-desc">Consolidarnos  como una opción para la ejecución  de obras civiles que da importancia a sus clientes y asegura la calidad de los resultados.</p>
 						</div>
 						<div class="col-12 col-sm-4">
-							<div class="circle"></div>
+							<div class="icon"><img src="assets/img/icon/acuerdos.svg"></div>
 							<h3 class="col-title">Valores</h3>
 							<p class="col-desc">Consideramos el compromiso como el fenómeno esencial para coordinar acciones con proveedores y clientes. Realizamos nuestro trabajo con transparencia y rectitud. Buscamos el logro de objetivos organizacionales con la ayuda de nuestros colaboradores.
 </p>
@@ -190,10 +187,10 @@
 						<p class="list-item"><i class="material-icons">phone</i><span>(+507) 203-4738</span></p>
 						<p class="list-item"><i class="material-icons">public</i><span>(redes sociales)</span></p>
 					</div>-->
-					<div class="col-12 title-column">
+					<div id="contacto" class="col-12 title-column">
 						<h2 class="section-title white">Contáctanos</h2>
 					</div>
-					<div class="col col-sm-4">
+					<div class="col col-sm-4 col-md-6">
 						<form id="contact-form">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Nombre o empresa</label>
@@ -213,6 +210,23 @@
 							</div><!--
 							<button type="submit" class="btn btn-primary">Enviar</button>-->
 						</form>
+						<!-- Informacion -->
+						<div class="info">
+							<img src="assets/img/icon/email.svg">
+							<span><a href="mailto:info@ensambleingenieria.com">info@ensambleingenieria.com</a></span>
+						</div>
+						<div class="info">
+							<img src="assets/img/icon/phone.svg">
+							<span><a href="tel:+507-6200-1688">(+507) 6200-1688</a> / <a href="tel:+507-6905-2733">6905-2733</a> / <a href="tel:203-4708">203-4708</a></span>
+						</div>
+						<div class="info">
+							<img src="assets/img/icon/instagram.svg">
+							<span><a href="https://instagram.com/ensambleingenieria">@EnsambleIngenieria</a></span>
+						</div>
+						<div class="info">
+							<img src="assets/img/icon/facebook.svg">
+							<span><a href="https://www.facebook.com/Ensamble-Ingenieria-356663088127299/">Ensamble Ingeniería</a></span>
+						</div>
 					</div>
 				</div>
 				<!--

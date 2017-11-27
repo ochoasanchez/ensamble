@@ -262,6 +262,20 @@ footer p {
 .hidden{
 	visibility:hidden!important;
 }
+.info{
+	font-family:'Source Sans Pro';
+	text-decoration:none!important;
+	color:#fff;
+	padding:1rem 0;
+	font-size:1.25rem;
+}
+.info>img{
+	width:2rem;
+	margin-right:1.5rem;
+}
+.info a{
+	color:#fff;
+}
 /*
 footer label{
 	display:none;
@@ -284,6 +298,9 @@ footer label{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.carousel-caption{
+		bottom:12rem;
+	}
 	.navbar-collapse{
 		position: absolute;
     left: 50%;
