@@ -314,6 +314,8 @@ footer label{
 	}
 	.nav-item{
 		padding-top: 2rem;
+		min-width:8rem;
+		text-align:center;
 	}
 	.brand{
 		padding-top:0;
