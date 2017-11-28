@@ -276,6 +276,15 @@ footer p {
 .info a{
 	color:#fff;
 }
+#contact-section .form-control{
+	background-color:#E0E0E0!important;
+}
+.badges .text{
+	font-family:'Roboto';
+}
+.text span{
+	display:block;
+}
 /*
 footer label{
 	display:none;

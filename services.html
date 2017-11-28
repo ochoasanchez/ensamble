@@ -68,6 +68,9 @@
 				color:#424242;
 				margin-top:1rem;
 			}
+			.hide{
+				display:none!important;
+			}
 		</style>
   </head>
 
@@ -94,7 +97,7 @@
 							<a class="nav-link" href="services.html">Servicios <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
+							<a class="nav-link" href="contact.html">Contacto</a>
 						</li>
 					</ul>
 				</div>
@@ -127,14 +130,34 @@
 						</div>
 						<!-- Acerca de la empresa -->
 						<div class="col-12 col-sm-4 actions">
-              <button class="btn btn-lg btn-primary" href="#" role="button">Steel Framing</button>
-              <button class="btn btn-lg btn-primary" href="#" role="button">Sistemas Livianos</button>
-              <button class="btn btn-lg btn-primary" href="#" role="button">Fachadas Ventiladas</button>
-              <button class="btn btn-lg btn-primary" href="#" role="button">Pintura Interior y Exterior</button>
+              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="1" role="button">Steel Framing</button>
+              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="2" role="button">Sistemas Livianos</button>
+              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="3" role="button">Fachadas Ventiladas</button>
+              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="4" role="button">Pintura Interior y Exterior</button>
 						</div>
 						<div class="col-12 col-sm-8">
-							<img src="assets/img/framing.jpg" class="img-fluid rounder mx-auto d-block">
-							<p class="description">Promovemos servicios de construcción liviana en “Steel Framing”, como alternativa constructiva adaptable, resistente, versátil para la ejecución de proyectos comerciales, habitacionales, galeras y hangares. Todos los proyectos son ensamblados bajo la norma internacional ASTM, lo que garantiza  alta calidad y  seguridad sin desatender su arquitectura y diseño, pues permite todo tipo de acabado.</p>
+							<div id="framing" class="service">
+								<img src="http://placehold.it/768x360" class="img-fluid rounder mx-auto d-block">
+								<p class="description">Promovemos servicios de construcción liviana en “Steel Framing”, como alternativa constructiva adaptable, resistente, versátil para la ejecución de proyectos comerciales, habitacionales, galeras y hangares. Todos los proyectos son ensamblados bajo la norma internacional ASTM, lo que garantiza  alta calidad y  seguridad sin desatender su arquitectura y diseño, pues permite todo tipo de acabado.</p>
+							</div>
+							<div id="sistemas" class="service hide">
+								<img src="http://placehold.it/768x360" class="img-fluid rounder mx-auto d-block">
+								<p class="description">Ofrecemos el servicio de construcción de paredes interiores y exteriores, cielos rasos y suspendidos, pisos elevados; cumpliendo con las especificaciones de instalación, asegurando resistencia y estabilidad en el tiempo. El abanico de posibilidades es amplio desde materiales resistentes al agua, fuego, golpes hasta revestimiento y colocación de fachada.</p>
+							</div>
+							<div id="fachadas" class="service hide">
+								<img src="http://placehold.it/768x360" class="img-fluid rounder mx-auto d-block">
+								<p class="description">
+									Instalamos fachadas ventiladas con gran versatilidad en materiales, diseño, color y acabado, tales como:
+									<br>Fachadas Micro-perforadas
+									<br>Alucobond
+									<br>Louvers
+									<br>Barandas y cercas	
+								</p>
+							</div>
+							<div id="pintura" class="service hide">
+								<img src="http://placehold.it/768x360" class="img-fluid rounder mx-auto d-block">
+								<p class="description">Contamos con un staff de colaboradores para realizar los más finos acabados en: pintura industrial, pintura de inmuebles, pintura de estacionamientos, pintura exterior, entre otros.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -223,5 +246,27 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+		<script>
+			$(".btn-service").click(function(){
+				var id = $(this).attr("data-id");
+				$(".service").removeClass("hide");
+				if (id == 1) {
+					$(".service").hide();
+					$("#framing").show();
+				}
+				else if (id == 2) {
+					$(".service").hide();
+					$("#sistemas").show();
+				}
+				else if (id == 3) {
+					$(".service").hide();
+					$("#fachadas").show();
+				}
+				else if (id == 4) {
+					$(".service").hide();
+					$("#pintura").show();
+				}
+			});
+		</script>
   </body>
 </html>
