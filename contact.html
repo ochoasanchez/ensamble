@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Sobre Nosotros</title>
+    <title>Contáctanos</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 				font-weight:300;
 			}
 			.banner{
-				background:url('assets/img/about.jpg') center center no-repeat;
+				background:url('assets/img/contact.jpg') center center no-repeat;
 				background-size:cover;
 				min-height:24rem;
 			}
@@ -85,6 +85,13 @@
 			}
 			.form-inline{
 				display:inline-block!important;
+			}
+			.container-contact{
+				padding:3rem 0 2rem;
+			}
+			#contact-form{
+				padding-top:1rem;
+				padding-bottom:2rem;
 			}
 		</style>
   </head>
@@ -137,31 +144,33 @@
       </section>
 			-->
 			
-			<div class="about">
+			<div id="about" class="container-contact">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 title-column">
 							<h2 class="section-title">Formulario de Contacto</h2>
 						</div>
+					</div><!-- /.row -->
+					<div id="contact-form" class="row">
 						<div class="col-12 col-sm-8">
 							<div class="container">
 								<form id="contact-section" class="row">
-									<div class="col-6">
+									<div class="col-12 col-sm-6">
 										<div class="form-group">
 											<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre completo" required>
 										</div>
 									</div>
-									<div class="col-6">
+									<div class="col-12 col-sm-6">
 										<div class="form-group">
 											<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de la empresa" required>
 										</div>
 									</div>
-									<div class="col-6">
+									<div class="col-12 col-sm-6">
 										<div class="form-group">
 											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
 										</div>
 									</div>
-									<div class="col-6">
+									<div class="col-12 col-sm-6">
 										<div class="form-group">
 											<input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Teléfono" required>
 										</div>
@@ -170,8 +179,8 @@
 										<div class="form-group">
 											<textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Escriba aquí su mensaje" style="width:100%;"></textarea>
 										</div>
-									</div><!--
-									<button type="submit" class="btn btn-primary">Enviar</button>-->
+									</div>
+									<button type="submit" class="btn btn-primary" style="margin-left:1rem;">Enviar Mensaje</button>
 								</form>
 							</div>
 						</div>

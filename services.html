@@ -122,7 +122,7 @@
       </section>
 			-->
 			
-			<div class="about">
+			<div class="about services-container">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 title-column">
@@ -251,20 +251,28 @@
 				var id = $(this).attr("data-id");
 				$(".service").removeClass("hide");
 				if (id == 1) {
+					$(".btn-service").removeClass("active");
 					$(".service").hide();
 					$("#framing").show();
+					$(this).addClass("active");
 				}
 				else if (id == 2) {
+					$(".btn-service").removeClass("active");
 					$(".service").hide();
 					$("#sistemas").show();
+					$(this).addClass("active");
 				}
 				else if (id == 3) {
+					$(".btn-service").removeClass("active");
 					$(".service").hide();
 					$("#fachadas").show();
+					$(this).addClass("active");
 				}
 				else if (id == 4) {
+					$(".btn-service").removeClass("active");
 					$(".service").hide();
 					$("#pintura").show();
+					$(this).addClass("active");
 				}
 			});
 		</script>
