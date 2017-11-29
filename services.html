@@ -67,6 +67,10 @@
 			.description{
 				color:#424242;
 				margin-top:1rem;
+				font-size:1.25rem;
+			}
+			.description>li{
+				font-size:1.25rem;
 			}
 			.hide{
 				display:none!important;
@@ -130,10 +134,10 @@
 						</div>
 						<!-- Acerca de la empresa -->
 						<div class="col-12 col-sm-4 actions">
-              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="1" role="button">Steel Framing</button>
-              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="2" role="button">Sistemas Livianos</button>
-              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="3" role="button">Fachadas Ventiladas</button>
-              <button class="btn btn-lg btn-primary btn-service" href="#" data-id="4" role="button">Pintura Interior y Exterior</button>
+              <button id="btn-framing" class="btn btn-lg btn-primary btn-service" href="#" data-id="1" role="button">Steel Framing</button>
+              <button id="btn-sistemas" class="btn btn-lg btn-primary btn-service" href="#" data-id="2" role="button">Sistemas Livianos</button>
+              <button id="btn-fachadas" class="btn btn-lg btn-primary btn-service" href="#" data-id="3" role="button">Fachadas Ventiladas</button>
+              <button id="btn-pintura" class="btn btn-lg btn-primary btn-service" href="#" data-id="4" role="button">Pintura Interior y Exterior</button>
 						</div>
 						<div class="col-12 col-sm-8">
 							<div id="framing" class="service">
@@ -148,10 +152,12 @@
 								<img src="http://placehold.it/768x360" class="img-fluid rounder mx-auto d-block">
 								<p class="description">
 									Instalamos fachadas ventiladas con gran versatilidad en materiales, diseño, color y acabado, tales como:
-									<br>Fachadas Micro-perforadas
-									<br>Alucobond
-									<br>Louvers
-									<br>Barandas y cercas	
+									<ul>
+										<li>Fachadas perforadas</li>
+										<li>Alucobond</li>
+										<li>Louvers</li>
+										<li>Barandas y cercas</li>	
+									</ul>
 								</p>
 							</div>
 							<div id="pintura" class="service hide">
@@ -247,6 +253,21 @@
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 		<script>
+			$(document).ready(function () {
+				if(window.location.href.indexOf("framing") > -1) {
+					$("#btn-framing").click();
+				}
+				else if(window.location.href.indexOf("sistemas") > -1) {
+					$("#btn-sistemas").click();
+				}
+				else if(window.location.href.indexOf("fachadas") > -1) {
+					$("#btn-fachadas").click();
+				}
+				else if(window.location.href.indexOf("pintura") > -1) {
+					$("#btn-pintura").click();
+				}
+			});
+			
 			$(".btn-service").click(function(){
 				var id = $(this).attr("data-id");
 				$(".service").removeClass("hide");
