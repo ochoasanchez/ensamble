@@ -1,8 +1,10 @@
+/*
 @font-face {
 	font-family: Myanmar;
 	font-weight:300;
 	src: url(mmrtext.ttf);
 }
+*/
 @font-face {
 	font-family: Myanmar;
 	font-weight:bold;
@@ -332,7 +334,7 @@ footer label{
 	}
 	.nav-item{
 		padding-top: 2rem;
-		min-width:8rem;
+		min-width:9rem;
 		text-align:center;
 	}
 	.brand{
@@ -355,6 +357,9 @@ footer label{
 	}
 	.carousel-caption{
 		bottom:16rem;
+	}
+	.nav-item{
+		min-width:12rem;
 	}
 }
 
