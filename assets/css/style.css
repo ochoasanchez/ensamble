@@ -10,9 +10,11 @@
 	font-weight:bold;
 	src: url(mmrtextb.ttf);
 }
-p,label,h2,h3{
+h2{
 	font-family:'Myanmar';
-	font-weight:300;
+}
+p,label,li,span,h3,h4,h5{
+	font-family:'Source Sans Pro';
 }
 .section-title{
 	font-family:'Myanmar';
@@ -188,6 +190,7 @@ body {
 .message{
 	color:#fff;
 	text-align:center;
+	font-family:'Source Sans Pro';
 }
 #framing>.card-title{
 	margin-top:.5rem!important;
