@@ -311,8 +311,8 @@ footer label{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	.carousel-caption{
-		bottom:10rem;
+	#carousel-caption{
+		top:14rem;
 	}
 	.carousel-item > img {
 		width:100%;
@@ -327,8 +327,8 @@ footer label{
 	.carousel-item{
 		height:85vh;
 	}
-	.carousel-caption{
-		bottom:11rem;
+	#carousel-caption{
+		top:18rem;
 	}
 	.navbar-collapse{
 		position: absolute;
@@ -348,7 +348,10 @@ footer label{
 	}
 }
 @media (min-width: 1900px) {
-	.carousel-caption>h1{
+	#carousel-caption{
+		top:22rem;
+	}
+	#carousel-caption>h1{
 		font-size:5rem!important;
 	}
 	.section-title{
@@ -357,9 +360,6 @@ footer label{
 	.section-title:after{
 		margin-top:1.5rem;
 
-	}
-	.carousel-caption{
-		bottom:16rem;
 	}
 	.nav-item{
 		min-width:12rem;

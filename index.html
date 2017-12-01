@@ -45,11 +45,17 @@
 				background:#83ab1e;
 				border-color:#83ab1e;
 			}
-			.carousel-caption>h1{
+			#carousel-caption{
+				position:absolute;
+				z-index:9999;
+				width:100%;
+			}
+			#carousel-caption>h1{
 				font-size:3rem;
-				text-shadow: 2px 2px 2px rgba(0,0,0,.75);
+				text-shadow: 2px 2px 2px rgba(0,0,0,1);
 				font-family: 'Source Sans Pro', sans-serif;
 				font-weight:300;
+				color:#FFFFFF;
 			}
 			footer{
 				background:url('assets/img/contact.png') center center no-repeat;
@@ -90,15 +96,20 @@
 					</ul>
 				</div>
 			</nav>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel"><!--
+			<div id="carousel-caption" class="text-center">
+				<h1>"Enlazamos tus sueños,<br> le damos vida a tus proyectos"</h1>
+				<p><a class="btn btn-lg btn-primary" href="#about" role="button">Conoce más</a></p>
+			</div>
+			<!--
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>-->
-        <div class="carousel-inner"><!--
+        </ol>
+        <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="assets/img/concreto_lg.jpg" alt="First slide">
+            <img class="first-slide" src="assets/img/vidrio_md.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Ejemplo de un título</h1>
@@ -106,7 +117,7 @@
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Pide una cotización</a></p>
               </div>
             </div>
-          </div>-->
+          </div>
           <div class="carousel-item active">
             <img class="second-slide" src="assets/img/acero_md.jpg" alt="Second slide">
             <div class="container">
@@ -115,9 +126,9 @@
                 <p><a class="btn btn-lg btn-primary" href="#about" role="button">Conoce más</a></p>
               </div>
             </div>
-          </div><!--
+          </div>
           <div class="carousel-item">
-            <img class="third-slide" src="assets/img/plastico_lg.jpg" alt="Third slide">
+            <img class="third-slide" src="assets/img/perforaciones_md.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>Uno más por precisión</h1>
@@ -125,8 +136,8 @@
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver galería</a></p>
               </div>
             </div>
-          </div>-->
-        </div><!--
+          </div>
+        </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -134,8 +145,26 @@
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>-->
-      </div>
+        </a>
+      </div>-->
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4200">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="assets/img/vidrio_md.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="assets/img/perforaciones_md.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="assets/img/acero_md.jpg" alt="Third slide">
+					</div>
+				</div>
+			</div>
     </header>
 
     <main role="main">
@@ -263,7 +292,7 @@
 						</div>
 						<div class="info">
 							<img src="assets/img/icon/phone.svg">
-							<span><a href="tel:+507-6200-1688">(+507) 6200-1688</a> / <a href="tel:+507-6905-2733">6905-2733</a> / <a href="tel:203-4708">203-4708</a></span>
+							<span><a href="tel:+507-6200-1688">(+507) 6200-1688</a> / <a href="tel:+507-6905-2733">6905-2733</a> / <a href="tel:203-4738">203-4738</a></span>
 						</div>
 						<div class="info">
 							<img src="assets/img/icon/instagram.svg">
