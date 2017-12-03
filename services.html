@@ -296,6 +296,14 @@
 					$(this).addClass("active");
 				}
 			});
+			$(".navbar-toggler").click(function(){
+				if ($(".navbar-toggler").attr("aria-expanded") == "false"){
+					$("#carousel-caption").addClass("pushed");
+				}
+				else{
+					$("#carousel-caption").removeClass("pushed");
+				}
+			});
 		</script>
   </body>
 </html>

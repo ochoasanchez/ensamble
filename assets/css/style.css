@@ -131,11 +131,18 @@ body {
 
 /* Declare heights because of positioning of img element */
 .navbar{
-		height:10vh;
+		min-height:10vh;
 	}
 .carousel-item{
 	height:90vh;
   background-color: #777;
+}
+.carousel-item>.d-block{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
 }
 .carousel-item > img {
   position: absolute;
@@ -205,6 +212,15 @@ body {
 #pintura>.card-title{
 	margin-top:0.5rem!important;
 	margin-bottom:-0.5rem!important;
+}
+.ally{
+	margin-bottom:2rem;
+}
+#carousel-caption{
+	top:14rem;
+}
+#carousel-caption>h1{
+	font-size:32px!important;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -293,24 +309,44 @@ footer p {
 .text span{
 	display:block;
 }
+.pushed{
+	top:32rem!important;
+}
 /*
 footer label{
 	display:none;
 }*/
+@media (min-width: 321px) {
+	#carousel-caption{
+		top:16rem;
+	}
+	#carousel-caption>h1{
+		font-size:38px!important;
+	}
+}
 @media (min-width: 576px) {
 	h1{
 		font-size:2rem;
 	}
 	.navbar{
-		height:10vh;
+		min-height:10vh;
 	}
 	.carousel-item{
 		height:90vh;
+	}
+	#carousel-caption{
+		top:14rem;
+	}
+	#carousel-caption>h1{
+		font-size:38px!important;
 	}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.ally{
+		margin-bottom:0;
+	}
 	#carousel-caption{
 		top:14rem;
 	}
