@@ -183,39 +183,34 @@
 
     <footer class="text-muted">
       <div class="container">
-				<div class="row justify-content-center"><!--
-					<div class="col-12 col-sm-4">
-						<img src="assets/img/logo_md.png" class="logo-footer">
-					</div>
-					<div class="col-12 col-sm-4">
-						<h4>Información</h4>
-						<p class="list-item"><i class="material-icons">email</i><span>info@ensambleingenieria.com</span></p>
-						<p class="list-item"><i class="material-icons">stay_current_portrait</i><span>(+507) 6905-2773 / 6200-1668</span></p>
-						<p class="list-item"><i class="material-icons">phone</i><span>(+507) 203-4738</span></p>
-						<p class="list-item"><i class="material-icons">public</i><span>(redes sociales)</span></p>
-					</div>-->
+				<div class="row justify-content-center">
 					<div id="contacto" class="col-12 title-column">
 						<h2 class="section-title white">Contáctanos</h2>
 					</div>
 					<div class="col col-sm-4 col-md-6">
-						<form id="contact-form">
+						<form action="lib/func/sendForm.php" method="post" id="contact-form">
 							<div class="form-group">
-								<label for="exampleInputEmail1">Nombre o empresa</label>
-								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre completo o empresa" required>
+								<label for="fullName">Nombre completo</label>
+								<input type="text" class="form-control" id="fullName" name="fullName" placeholder="Nombre completo" required>
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Correo electrónico</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+								<label for="companyName">Nombre de la empresa</label>
+								<input type="text" class="form-control" id="companyName" name="companyName" placeholder="Nombre de la empresa">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Teléfono</label>
-								<input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Teléfono" required>
+								<label for="email">Correo electrónico</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
 							</div>
 							<div class="form-group">
-								<label for="exampleFormControlTextarea1">Mensaje</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aquí su mensaje"></textarea>
-							</div><!--
-							<button type="submit" class="btn btn-primary">Enviar</button>-->
+								<label for="phoneNumber">Teléfono</label>
+								<input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" aria-describedby="emailHelp" placeholder="Teléfono" required>
+							</div>
+							<div class="form-group">
+								<label for="message">Mensaje</label>
+								<textarea class="form-control" id="message" name="message" rows="3" placeholder="Escriba aquí su mensaje" required></textarea>
+							</div> 
+							<input type="hidden" id="origin" name="origin" value="Footer">
+							<button name='submitted' type="submit" class="btn btn-primary mt-2">Enviar</button>
 						</form>
 						<!-- Informacion -->
 						<div class="info">
@@ -235,9 +230,21 @@
 							<span><a href="https://www.facebook.com/Ensamble-Ingenieria-356663088127299/">Ensamble Ingeniería</a></span>
 						</div>
 					</div>
-					<div class="col-sm-4 col-md-4">
-						<blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BcSkmlEgjQ2/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ensamble Ingenieria (@ensambleingenieria)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-12-04T18:21:27+00:00">Dec 4, 2017 at 10:21am PST</time></p></div></blockquote>
-						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					<div id="instagram-pic" class="col-sm-4 col-md-4">
+						<div class="row header">
+							<div id="ig-header" class="col-12 text-center">
+								<a href="https://instagram.com/ensambleingenieria"><img id="ig-profile-pic" src="#" class="rounded-circle img-fluid center-block"></a>
+								<a href="https://instagram.com/ensambleingenieria" class="ig-link">ensambleingenieria</a>
+								<a href="https://instagram.com/ensambleingenieria"><img class="ig-icon" src="assets/img/icon/ig.svg"></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<a href="#" id="ig-post-link">
+									<img src="#" id="ig-post" class="img-fluid center-block">
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
         <p class="float-right">
@@ -249,9 +256,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
 		<script>
 			$(document).ready(function () {
 				if(window.location.href.indexOf("framing") > -1) {
@@ -294,14 +302,6 @@
 					$(".service").hide();
 					$("#pintura").show();
 					$(this).addClass("active");
-				}
-			});
-			$(".navbar-toggler").click(function(){
-				if ($(".navbar-toggler").attr("aria-expanded") == "false"){
-					$("#carousel-caption").addClass("pushed");
-				}
-				else{
-					$("#carousel-caption").removeClass("pushed");
 				}
 			});
 		</script>

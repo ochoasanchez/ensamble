@@ -312,6 +312,38 @@ footer p {
 .pushed{
 	top:32rem!important;
 }
+.ig-post{
+	border:1px solid #fff;
+	border-radius:0 0 4px 4px;
+}
+#ig-profile-pic{
+	display:inline-block;
+	width:2.5rem;
+	border:1px solid #bdbdbd;
+	float: left;
+}
+#ig-header{
+	background:#fff;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	border-radius: 4px 4px 0 0;
+}
+.ig-icon{
+	width:2rem;
+	height:2rem;
+	display:inline-block;
+	float: right;
+	position: absolute;
+	top: 1.25rem;
+	right:1rem;
+}
+.ig-link{
+	font-size:1.25rem;
+	display:inline-block;
+	float: left;
+	margin-left: 1rem;
+	margin-top: .25rem;
+}
 /*
 footer label{
 	display:none;
