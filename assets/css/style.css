@@ -89,6 +89,9 @@ p,label,li,span,h3,h4,h5{
 	height: 2px;
 	background-color: #019ee1;
 }
+.double::after{
+	top:5rem!important;
+}
 .blue,.card-title{
 	color:#019ee1!important;
 }
@@ -344,6 +347,20 @@ footer p {
 	margin-left: 1rem;
 	margin-top: .25rem;
 }
+.brand-desktop{
+	display:none;
+}
+.info-icon{
+	width:25%;
+	margin:1.5rem auto;
+}
+.brand-success{
+	width:10rem;
+	margin:0 auto;
+}
+#success{
+	height:100vh;
+}
 /*
 footer label{
 	display:none;
@@ -388,6 +405,13 @@ footer label{
 	#carousel-caption>h1{
 		font-size:42px!important;
 	}
+	.double::after{
+		top:2.5rem!important;
+	}
+	.info-icon{
+		width:66%;
+		margin:0 auto;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -416,6 +440,12 @@ footer label{
 	}
 	.services-container{
 		min-height:120vh;
+	}
+	.brand-mobile{
+		display:none!important;
+	}
+	.brand-desktop{
+		display:inline!important;
 	}
 }
 @media (min-width: 1900px) {

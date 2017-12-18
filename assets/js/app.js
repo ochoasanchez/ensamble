@@ -8,7 +8,7 @@ $(document).ready(function () {
 			var link = u.data[0].link;
 			$("#ig-post").attr('src',url);
 			$("#ig-profile-pic").attr('src',profilePic);
-			$("#ig-post-link").attr('src',link);
+			$("#ig-post-link").attr('href',link);
 			$("#ig-post").addClass('ig-post');
 			//console.log(u.data[0].images.low_resolution.url);
 		}
